@@ -13,6 +13,9 @@ options = ["rock", "paper", "scissors", "lizard", "spock"]
 while True: 
     user_input = input("Type Rock/Paper/Scissors/Lizard/Spock or Q to quit: ").lower()
     if user_input == "q":
+        print("You won", user_wins, "times.")
+        print("Computer won", computer_wins, "times.")
+        print("Goodbye!")
         break
 
     if user_input not in options:
@@ -131,11 +134,12 @@ while True:
     if user_input == computer_pick:
         print("It's a draw!")
 
-    else:
-        print("You lost!")
-        computer_wins += 1
+    #else:
+     #   print("You lost!")
+      #  computer_wins += 1
  
 
-print("You won", user_wins, "times.")
-print("Computer won", computer_wins, "times.")
-print("Goodbye!")
+
+    #print("You won", user_wins, "times.")
+    #print("Computer won", computer_wins, "times.")
+    #print("Goodbye!")
